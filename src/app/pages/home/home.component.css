@@ -1,0 +1,25 @@
+.mat-mdc-button-base {
+  margin: 8px 8px 0px 0;
+}
+
+
+.produto-box{
+  width: 100%;
+  gap: 15px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: left;
+  margin-bottom: 2rem;
+}
+
+.pagination-buttons button{
+  margin: 10px;
+  background-color: #cdcdcd;
+}
+
+
+.pagination-buttons span{
+  font-weight: 400;
+
+}

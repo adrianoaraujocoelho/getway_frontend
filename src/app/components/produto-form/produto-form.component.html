@@ -1,0 +1,52 @@
+<mat-card>
+  <h1>{{ btnTitulo }}</h1>
+
+  <form [formGroup]="produtoForm" (ngSubmit)="submit()" #formDir="ngForm">
+    <input type="hidden" value="" formControlName="id" />
+
+    <div class="input-box">
+      <mat-form-field>
+        <mat-label>Nome:</mat-label>
+        <input
+          matInput
+          id="nome"
+          type="text"
+          class="form-control text-dark"
+          formControlName="nome"
+          placeholder="Insira o nome!"
+          required
+        />
+      </mat-form-field>
+    </div>
+
+    <div class="input-box">
+      <mat-form-field>
+        <mat-label>Preço:</mat-label>
+        <input
+          matInput
+          id="preco"
+          type="number"
+          class="form-control text-dark"
+          formControlName="preco"
+          placeholder="Insira o preco!"
+          required
+        />
+      </mat-form-field>
+    </div>
+
+    <div class="btn-box">
+      <button
+        type="submit"
+        class="btn btn-success w-50"
+        [disabled]="!produtoForm.valid"
+        mat-raised-button
+        color="accent"
+      >
+        {{ btnAcao }}
+      </button>
+      <button class="btn btn-primary w-50" routerLink="" mat-raised-button>
+        Voltar
+      </button>
+    </div>
+  </form>
+</mat-card>

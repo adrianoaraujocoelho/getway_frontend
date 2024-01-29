@@ -1,0 +1,35 @@
+<mat-card>
+  <div>
+    <h1 class="text-light">Detalhes Produto</h1>
+  </div>
+
+  <div *ngIf="produto">
+    <form>
+      <div class="input-box">
+        <mat-form-field>
+          <mat-label>Nome:</mat-label>
+          <input
+            matInput
+            type="text"
+            class="form-control text-dark"
+            value="{{ produto.nome }}"
+            disabled
+          />
+        </mat-form-field>
+      </div>
+
+      <div class="input-box">
+        <mat-form-field>
+          <mat-label>Preço:</mat-label>
+          <input
+            matInput
+            type="text"
+            class="form-control text-dark"
+            value="{{ produto.preco }}"
+            disabled
+          />
+        </mat-form-field>
+      </div>
+    </form>
+  </div>
+</mat-card>

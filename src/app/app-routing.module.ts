@@ -6,10 +6,22 @@ import { CadastroComponent } from './pages/cadastro/cadastro.component';
 import { EditarComponent } from './pages/editar/editar.component';
 
 const routes: Routes = [
-  { path: 'detalhes/:id', component: DetalhesComponent },
-  { path: '', component: HomeComponent },
-  { path: 'cadastro', component: CadastroComponent },
-  { path: 'editar/:id', component: EditarComponent }
+  {
+    path: 'detalhes/:id',
+    component: DetalhesComponent
+  },
+  {
+    path: '',
+    component: HomeComponent
+  },
+  {
+    path: 'cadastro',
+    component: CadastroComponent
+  },
+  {
+    path: 'editar/:id',
+    component: EditarComponent
+  }
 ];
 
 @NgModule({

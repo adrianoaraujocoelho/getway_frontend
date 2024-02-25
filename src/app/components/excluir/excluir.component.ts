@@ -14,7 +14,12 @@ export class ExcluirComponent implements OnInit {
   inputdata: any
   produto!: Produto;
 
-  constructor(@Inject(MAT_DIALOG_DATA) public data: any, private produtoService: ProdutoService, private router: Router, private ref: MatDialogRef<ExcluirComponent>) { }
+  constructor(@Inject(MAT_DIALOG_DATA)
+
+  public data: any,
+    private produtoService: ProdutoService,
+    private router: Router,
+    private ref: MatDialogRef<ExcluirComponent>) { }
 
   ngOnInit(): void {
     this.inputdata = this.data;

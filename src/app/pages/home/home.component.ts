@@ -16,7 +16,9 @@ export class HomeComponent implements OnInit {
   paginaAtual = 0;
   totalPaginas = 0;
 
-  constructor(private produtoService: ProdutoService, public matDialog: MatDialog) { }
+  constructor(
+    private produtoService: ProdutoService,
+    public matDialog: MatDialog) { }
 
   filtroNomeDinamico: string = "";
 
